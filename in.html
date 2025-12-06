@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema ERP Olist - Gestão que Acelera</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">Olist **ERP**</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Soluções</a></li>
+                    <li><a href="#">Planos</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn-login">Acessar</a>
+                <a href="#" class="btn-primary">Teste Grátis</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-text-content">
+                    <span class="tag-label">A solução mais completa do mercado</span>
+                    <h1>O ERP **Web** que transforma sua gestão em crescimento.</h1>
+                    <p>Controle financeiro, estoque, pedidos e notas fiscais em uma única plataforma, de forma simples e automatizada.</p>
+                    <div class="hero-cta-group">
+                        <a href="#" class="btn-primary btn-large">Quero Automatizar Meu Negócio</a>
+                        <p class="small-text">Teste grátis por 7 dias. Não precisa de cartão.</p>
+                    </div>
+                </div>
+                <div class="hero-image-mockup">
+                    <img src="https://via.placeholder.com/600x400?text=Mockup+do+Sistema+ERP+Olist" alt="Interface do sistema ERP Olist">
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2>Recursos Essenciais para Sua Operação</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Gestão Financeira</h3>
+                        <p>Controle contas a pagar e receber, fluxo de caixa e relatórios DRE em tempo real.</p>
+                        <a href="#" class="link-saiba-mais">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-boxes"></i>
+                        <h3>Controle de Estoque</h3>
+                        <p>Sincronização automática com marketplaces e loja física. Evite rupturas e perdas.</p>
+                        <a href="#" class="link-saiba-mais">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-file-invoice"></i>
+                        <h3>Emissão de NF-e</h3>
+                        <p>Notas fiscais eletrônicas emitidas de forma rápida e automática a cada venda.</p>
+                        <a href="#" class="link-saiba-mais">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Olist ERP | &copy; 2025.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+/* Variáveis para fácil alteração de cor */
+:root {
+    --olist-blue: #0A36E1; /* O azul institucional forte */
+    --olist-light-blue: #3E63FC;
+    --olist-dark: #333;
+    --olist-light-gray: #f7f7f9;
+    --olist-text-gray: #666;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Reset Básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--olist-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- ESTILIZAÇÃO GERAL DE BOTÕES --- */
+.btn-primary {
+    background-color: var(--olist-blue);
+    color: #fff !important;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 2px solid var(--olist-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--olist-light-blue);
+    border-color: var(--olist-light-blue);
+    transform: translateY(-2px);
+}
+
+.btn-login {
+    color: var(--olist-blue);
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.btn-large {
+    padding: 16px 40px;
+    font-size: 1.1em;
+}
+
+/* --- 1. CABEÇALHO --- */
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid var(--olist-light-gray);
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--olist-dark);
+}
+
+.logo strong {
+    color: var(--olist-blue);
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    color: var(--olist-text-gray);
+    font-size: 1em;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--olist-blue);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+/* --- 2. SEÇÃO PRINCIPAL (HERO) --- */
+.hero-section {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: left;
+}
+
+.hero-grid {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text-content {
+    flex: 1;
+}
+
+.hero-image-mockup {
+    flex: 1;
+}
+
+.hero-image-mockup img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-light);
+}
+
+.tag-label {
+    background-color: var(--olist-light-gray);
+    color: var(--olist-blue);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.9em;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-text-content h1 {
+    font-size: 3.2em;
+    color: var(--olist-dark);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-text-content h1 strong {
+    color: var(--olist-blue);
+}
+
+.hero-text-content p {
+    font-size: 1.2em;
+    color: var(--olist-text-gray);
+    margin-bottom: 30px;
+}
+
+.hero-cta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.small-text {
+    font-size: 0.85em;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* --- 3. SEÇÃO DE FUNCIONALIDADES (GRID) --- */
+.features-section {
+    background-color: var(--olist-light-gray);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: var(--olist-dark);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-light);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card i {
+    font-size: 2.5em;
+    color: var(--olist-blue);
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.4em;
+    color: var(--olist-dark);
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: var(--olist-text-gray);
+    margin-bottom: 20px;
+}
+
+.link-saiba-mais {
+    color: var(--olist-blue);
+    font-weight: 600;
+    display: inline-block;
+}
+
+.link-saiba-mais:hover {
+    text-decoration: underline;
+}
+
+/* --- 4. RODAPÉ --- */
+.footer {
+    background-color: var(--olist-dark);
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+// Exemplo de Interface
+interface Pessoa {
+  nome: string;
+  idade: number;
+  saudar(): void;
+}
+
+import { IProduto } from './data.interface';
+
+// O TypeScript garantirá que este objeto tenha 'id', 'nome', 'preco' e 'disponivel'
+const novoItem: IProduto = {
+    id: 101,
+    nome: 'Notebook Gamer X',
+    preco: 5500.00,
+    disponivel: true,
+    tags: ['eletrônico', 'promoção']
+};
+
+// Se você tentasse adicionar uma propriedade não definida, o compilador emitiria um erro:
+// novoItem.estoque = 10; // Erro de compilação!
+
+import { IProduto } from './data.interface';
+
+/**
+ * Recebe um produto tipado e retorna uma string formatada.
+ *
+ * @param produto Os dados do produto que devem seguir a interface IProduto.
+ * @returns Uma string com informações do produto.
+ */
+function exibirDetalhes(produto: IProduto): string {
+    if (produto.disponivel) {
+        return `${produto.nome} (ID: ${produto.id}) está disponível por R$ ${produto.preco.toFixed(2)}.`;
+    }
+    return `${produto.nome} está esgotado.`;
+}
+
+// O TypeScript verifica se a função está sendo chamada corretamente
+console.log(exibirDetalhes(novoItem));
+
+import { IProduto } from './data.interface';
+
+async function buscarProdutos(): Promise<IProduto[]> {
+    const response = await fetch('https://api.seusite.com/produtos');
+    
+    // O TypeScript agora sabe que 'data' é um array de IProduto
+    const data: IProduto[] = await response.json(); 
+    
+    return data;
+}
+
+// Usando o resultado
+buscarProdutos().then((listaDeProdutos) => {
+    // 'listaDeProdutos' é garantidamente do tipo IProduto[]
+    console.log(`Foram encontrados ${listaDeProdutos.length} produtos.`);
+    
+    // Você pode usar 'exibirDetalhes' com segurança
+    listaDeProdutos.forEach(produto => {
+        console.log(exibirDetalhes(produto)); 
+    });
+}).catch(error => {
+    console.error('Erro ao buscar produtos:', error);
+});
